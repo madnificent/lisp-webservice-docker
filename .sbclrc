@@ -1,0 +1,5 @@
+;;; -*- Mode:Lisp; Syntax:ANSI-Common-Lisp; -*-
+
+(push :docker *features*)
+;; see http://stackoverflow.com/questions/22822793/running-utf-8-encoded-scripts-with-steel-bank-common-lisp
+(setf sb-impl::*default-external-format* :utf-8)
