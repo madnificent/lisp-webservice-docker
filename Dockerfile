@@ -1,4 +1,4 @@
-FROM davazp/quicksbcl
+FROM lokedhs/sbcl-quicklisp
 
 ENV LC_TYPE=en_US.UTF-8
 
