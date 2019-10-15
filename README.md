@@ -37,6 +37,19 @@ should be picked up automatically.
 
 We expose port 4005 (for swank) and port 80 (for webservices) by default.
 
+##### ENV `LISP_DYNAMIC_SPACE_SIZE`
+
+Sets the dynamic-space-size of SBCL in MB.  SBCL's default value is platform dependent.  SBCL defaults to
+1024 on Docker x86-64 (_checked at 2019/10/14_).
+
+##### ENV `LISP_CONTROL_STACK_SIZE`
+
+Sets SBCL's control-stack-size in MB.  SBCL defaults to 2.
+
+##### ENV `LOG_LISP_LAUNCH_COMMAND`
+
+Allows logging of the lisp's launch command, providing some insights into performance options.
+
 ##### `:docker` in `*FEATURES`
 
 We place the `:docker` keyword in lisp's `*FEATURES*` variable so you can check if your service is
