@@ -1,6 +1,6 @@
 #! /bin/bash
 
-CMD_OPTS = ""
+CMD_OPTS=""
 
 if [[ $LISP_DYNAMIC_SPACE_SIZE ]]
 then
