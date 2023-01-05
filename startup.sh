@@ -9,7 +9,7 @@ fi
 
 if [[ $LISP_DYNAMIC_STACK_SIZE ]]
 then
-    CMD_OPTS="$CMD_OPTS --dynamic-space-size $LISP_DYNAMIC_STACK_SIZE"
+    CMD_OPTS="$CMD_OPTS --control-stack-size $LISP_DYNAMIC_STACK_SIZE"
 fi
 
 if [[ $LOG_LISP_LAUNCH_COMMAND ]]
