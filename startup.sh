@@ -17,4 +17,4 @@ then
     echo "sbcl $CMD_OPTS --load /usr/src/startup.lisp"
 fi
 
-sbcl $CMD_OPTS --load /usr/src/startup.lisp
+exec sbcl $CMD_OPTS --load /usr/src/startup.lisp
