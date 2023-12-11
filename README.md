@@ -50,7 +50,7 @@ Sets SBCL's control-stack-size in MB.  SBCL defaults to 2.
 
 Allows logging of the lisp's launch command, providing some insights into performance options.
 
-##### `:docker` in `*FEATURES`
+##### `:docker` in `*FEATURES*`
 
 We place the `:docker` keyword in lisp's `*FEATURES*` variable so you can check if your service is
 currently running in docker.  You could then launch on port 80 rather than 8080 or similar, as
