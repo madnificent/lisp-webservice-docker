@@ -35,4 +35,6 @@
 (ql:quickload :swank) ;; we need this toplevel
 (format t "~& >> docker finished loading swank ~%")
 
-(sb-ext:quit)
+(sb-ext:quit :recklessly-p t)
+
+(format t "~& >> asked to quit sbcl~%")
