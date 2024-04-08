@@ -1,5 +1,4 @@
-FROM madnificent/sbcl-quicklisp:2.3.0-20230621
-
+FROM madnificent/sbcl-quicklisp:2.4.3-20240308
 ENV LC_TYPE=en_US.UTF-8
 
 ENTRYPOINT ["/bin/bash", "-c"]
