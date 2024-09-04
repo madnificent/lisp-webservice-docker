@@ -12,6 +12,7 @@
 
 (format t "~& >> docker setting up environment ... ~%")
 (push :docker *features*)
+(push :docker-build *features*)
 (push #p"/app/" ql:*local-project-directories*)
 (format t "~& >> docker finished setting up environment~%")
 
