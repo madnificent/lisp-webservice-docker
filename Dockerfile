@@ -1,4 +1,4 @@
-FROM madnificent/sbcl-quicklisp:2.3.0-20230621
+FROM madnificent/sbcl-quicklisp:2.6.7-20261008
 
 ENV LC_TYPE=en_US.UTF-8
 
