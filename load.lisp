@@ -12,6 +12,7 @@
 
 (format t "~& >> docker setting up environment ... ~%")
 (push :docker *features*)
+(push :docker-build *features*)
 (push #p"/app/" ql:*local-project-directories*)
 (format t "~& >> docker finished setting up environment~%")
 
@@ -35,4 +36,6 @@
 (ql:quickload :swank) ;; we need this toplevel
 (format t "~& >> docker finished loading swank ~%")
 
-(sb-ext:quit)
+(sb-ext:quit :recklessly-p t)
+
+(format t "~& >> asked to quit sbcl~%")
