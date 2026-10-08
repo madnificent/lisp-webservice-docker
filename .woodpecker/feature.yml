@@ -1,11 +1,13 @@
-pipeline:
+steps:
   build-and-push:
     image: woodpeckerci/plugin-docker-buildx
     settings:
-      platforms: linux/amd64,linux/arm64
       repo: "${CI_REPO_OWNER}/${CI_REPO_NAME%%-docker}"
       tags: "feature-${CI_COMMIT_BRANCH##feature/}"
-    secrets: [docker_username, docker_password]
-    when:
-      event: push
-      branch: feature/*
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+when:
+  - event: push
+    branch: [feature/*]
